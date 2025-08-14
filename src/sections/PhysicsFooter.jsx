@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Matter from 'matter-js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import AnimatedResumeButton from './Resume';
 gsap.registerPlugin(ScrollTrigger);
 
 const PhysicsFooter = () => {
@@ -11,8 +11,6 @@ const PhysicsFooter = () => {
   const engineRef = useRef(null);
   const runnerRef = useRef(null);
   const bodiesRef = useRef([]);
-
-  // Track which object is hovered for correct inline styling
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   useEffect(() => {
@@ -145,21 +143,24 @@ const PhysicsFooter = () => {
     };
   }, []);
 
-  const techs = ['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'React JS', 'Java', 'Python', 'GitHub'];
+  const techs = ['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'React JS', 'Three JS','Java', 'Python', 'GitHub'];
+
+  // Function to open resume in a new tab
+  const openResume = () => {
+    window.open('/my-resume.pdf', '_blank'); // Replace with your actual file path or a Google Drive link
+  };
 
   return (
-    // Main Container
     <div
       ref={footerRef}
       style={{
         position: 'absolute',
         bottom: '1rem',
         right: '1rem',
-        height: '283px',        // Reduced height
-        width: '600px',       // Reduced width
-        // marginBottom: '1rem',
+        height: '283px',
+        width: '1450px',
         marginRight: '1rem',
-        maxWidth: '600px',
+        maxWidth: '100%',
         backgroundColor: 'black',
         color: 'white',
         borderTopLeftRadius: '160px',
@@ -169,25 +170,21 @@ const PhysicsFooter = () => {
         display: 'flex',
         flexDirection: 'column',
         zIndex: 1000,
-        fontFamily: "Arial, sans-serif", // Simpler font
+        fontFamily: "Arial, sans-serif",
       }}
     >
-      {/* Tech Stack Heading */}
       <div style={{
-        fontSize: '2rem',           // Smaller heading font
+        fontSize: '2rem',
         fontWeight: 'bold',
         color: 'white',
-        textAlign: 'right',         // Right aligned
-        // padding: '1rem 0.1rem 0.5rem 0', // Shift more to right via padding
+        textAlign: 'right',
         userSelect: 'none',
         pointerEvents: 'none',
-        fontFamily: "Arial, sans-serif",
         letterSpacing: '0.1em',
       }}>
         Tech Stack
       </div>
 
-      {/* Small light text above objects */}
       <div style={{
         fontSize: '1.1rem',
         color: 'rgba(240, 240, 240, 0.3)',
@@ -198,21 +195,24 @@ const PhysicsFooter = () => {
         fontWeight: '300',
         textAlign: 'right',
         width: '100%',
-        fontFamily: "Arial, sans-serif",
         letterSpacing: '0.05em',
       }}>
         Why list, When you can play..!
       </div>
-
-      {/* Sub-container for Physics */}
       <div
         ref={containerRef}
         style={{
-          position: 'relative',
+          position: 'absolute',
           flex: 1,
-          width: '600px',
+          right: 0,                // stick to right edge
+          top: 0,                  // align to the top
+          // bottom: 0,
+          width: '700px',
+          // backgroundColor: 'blue',
+          height: '100%',
+          display: 'flex',
+          flexWrap: 'wrap',
           pointerEvents: 'auto',
-          // padding: '0.5rem',
         }}
       >
         {techs.map((text, idx) => (
@@ -233,11 +233,11 @@ const PhysicsFooter = () => {
               borderRadius: 13,
               cursor: 'grab',
               userSelect: 'none',
-              fontWeight: '500',
+              fontWeight: '550',
               fontSize: '0.74rem',
               boxShadow:
                 hoveredIndex === idx
-                  ? '0 0 11px 3px rgba(66, 135, 245, 0.88)'
+                  ? '0 0 11px 3px rgba(86, 135, 245, 0.88)'
                   : '0 1px 4px rgba(0,0,0,0.3)',
               backgroundColor:
                 hoveredIndex === idx
@@ -245,7 +245,6 @@ const PhysicsFooter = () => {
                   : 'white',
               willChange: 'transform',
               transition: 'box-shadow 0.3s, background-color 0.3s',
-              fontFamily: "Arial, sans-serif",
             }}
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(-1)}
@@ -254,7 +253,8 @@ const PhysicsFooter = () => {
           </div>
         ))}
       </div>
-    </div>
+      <AnimatedResumeButton />
+ </div>
   );
 };
 

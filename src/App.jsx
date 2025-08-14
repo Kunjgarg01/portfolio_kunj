@@ -8,7 +8,7 @@ import Works from "./sections/Works";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
 import Achievements from "./sections/achievements";
-
+// import Ribbons from './sections/Ribbons';
 const App = () => {
   const { progress } = useProgress();
   const [isReady, setIsReady] = useState(false);

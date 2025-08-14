@@ -50,13 +50,13 @@ const About = () => {
             <h2 className="mb-3 text-2xl font-bold text-white">
               Hi, I'm Kunj Garg
             </h2>
-            <div>
-            <p className="text-base">
-              Passionate front-end developer with a strong eye for design and detail.<br />
-              I specialize in building responsive, user-friendly web interfaces using modern technologies like HTML, CSS, JavaScript, and React.<br />
-              I turn ideas into seamless digital experiences that are both scalable and performance-driven.
-            </p>
-            </div>
+                <div className="w-full max-w-6xl h-90 overflow-auto">
+                <p className="text-base whitespace-normal break-words">
+            Passionate front-end developer with a keen eye for design, detail, and user experience.<br />
+            Skilled in creating responsive, accessible, and visually engaging web interfaces using modern technologies such as HTML, CSS, JavaScript, and React.<br />
+            Dedicated to transforming ideas into seamless, scalable, and high-performance digital solutions that deliver exceptional user satisfaction.
+          </p>
+          </div>
           </div>
         </div>
       </div>
