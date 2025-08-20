@@ -46,17 +46,39 @@ export const projects = [
       "• Automated HR workflows streamline daily operations.",
       "• Prioritizes data security and reliable performance for organizations.",
     ].join('\n'),
-    href: "",
+    href: "https://i-phone-kunj-s-projects.vercel.app/",
     image: "/assets/projects/Employee Management System.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React.js" },
+      // { id: 1, name: "React.js" },
+      // { id: 1, name: "React.js" },
       { id: 2, name: "Tailwind CSS" },
       
     ],
   },
   {
-    id: 2,
+  id: 2,
+  name: "3D IPhone Website",
+  description: [
+    "• Developed a responsive 3D IPhone website with interactive animations and immersive user experience.",
+    "• Enabled dynamic user customization of IPhone's color and size using Three.js and React Three Fiber.",
+    "• Built scroll-triggered animations and smooth transitions using GSAP for enhanced engagement.",
+    "• Implemented a custom GSAP-powered video carousel to highlight product features effectively.",
+    // "• Styled with Tailwind CSS and deployed with Vite for fast and scalable performance."
+  ].join('\n'),
+  href: "https://i-phone-kunj-s-projects.vercel.app/",
+  image: "/assets/projects/iphone.png",
+  bgImage: "/assets/backgrounds/blanket.jpg",
+  frameworks: [
+    { id: 1, name: "React.js" },
+    { id: 2, name: "Three.js" },
+    { id: 3, name: "GSAP" },
+    { id: 4, name: "Tailwind CSS" }
+  ]
+},
+  {
+    id: 3,
     name: "Converso-AI Chatbot",
     description: [
       "• Interactive chatbot that understands and responds to natural language.",
@@ -75,7 +97,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Quiz Trivia",
     description: [
       "• Themed trivia game comparing MARVEL and DC universes.",
@@ -94,7 +116,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Tic Tac Toe Game",
     description: [
       "• Classic Tic Tac Toe game with a clean, responsive design.",
@@ -112,7 +134,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Rock Paper Scissors Game",
     description: [
       "• Fast-paced classic game with smooth animations.",
@@ -130,13 +152,13 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Amazon Clone",
     description: [
-      "• Faithful Amazon homepage clone built with HTML and CSS.",
+      "• Amazon homepage clone built with HTML and CSS.",
       "• Responsive product grid and navigation bar.",
       "• Demonstrates frontend skills with authentic design attention.",
-      "• Showcases modern e-commerce web layout techniques.",
+      // "• Showcases modern e-commerce web layout techniques.",
     ].join('\n'),
     href: "https://amazon-clone-ten-sable.vercel.app/",
     image: "/assets/projects/Amazon page.png",

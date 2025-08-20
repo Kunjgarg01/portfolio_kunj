@@ -143,7 +143,7 @@ const PhysicsFooter = () => {
     };
   }, []);
 
-  const techs = ['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'React JS', 'Three JS','Java', 'Python', 'GitHub'];
+  const techs = ['HTML', 'CSS', 'Tailwind CSS', 'Javascript', 'React JS', 'Three JS','GSAP','Java', 'Python', 'GitHub'];
 
   // Function to open resume in a new tab
   const openResume = () => {
