@@ -34,8 +34,9 @@ const About = () => {
     });
   });
 
+// ...existing code...
   return (
-    <section id="about" className="min-h-screen bg-black rounded-b-4xl">
+    <section id="about" className="min-h-[calc(100vh+20px)] bg-black rounded-b-4xl">">
       <AnimatedHeaderSection
         subTitle={"Cod with purpose, Built to scale"}
         title={"About"}
@@ -43,26 +44,27 @@ const About = () => {
         textColor={"text-white"}
         withScrollTrigger={true}
       />
-      <div className="flex flex-col gap-4 pt-4 px-10 pb-11 text-sm font-light tracking-wide text-white/60">
-        {/* Left section, with Tech Stack heading in the right corner */}
-        <div className="w-[100%] flex justify-between items-end">
-          <div>
-            <h2 className="mb-3 text-2xl font-bold text-white">
+      <div className="flex flex-col gap-4 pt-4 px-4 sm:px-8 md:px-10 pb-11 text-sm font-light tracking-wide text-white/60">
+        {/* Responsive layout for About section */}
+        <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end">
+          <div className="w-full">
+            <h2 className="mb-3 text-2xl md:text-3xl font-bold text-white">
               Hi, I'm Kunj Garg
             </h2>
-                <div className="w-full max-w-6xl h-90 overflow-auto">
-                <p className="text-base whitespace-normal break-words">
-            Passionate front-end developer with a keen eye for design, detail, and user experience.<br />
-            Skilled in creating responsive, accessible, and visually engaging web interfaces using modern technologies such as HTML, CSS, JavaScript, and React.<br />
-            Dedicated to transforming ideas into seamless, scalable, and high-performance digital solutions that deliver exceptional user satisfaction.
-          </p>
-          </div>
+            <div className="w-full max-w-6xl h-auto overflow-auto">
+              <p className="text-base md:text-lg whitespace-normal break-words leading-relaxed">
+                Passionate front-end developer with a keen eye for design, detail, and user experience.<br />
+                Skilled in creating responsive, accessible, and visually engaging web interfaces using modern technologies such as HTML, CSS, JavaScript, and React.<br />
+                Dedicated to transforming ideas into seamless, scalable, and high-performance digital solutions that deliver exceptional user satisfaction.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <PhysicsFooter />
     </section>
   );
+// ...existing code...
 };
 
 export default About;
