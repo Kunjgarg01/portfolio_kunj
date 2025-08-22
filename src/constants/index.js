@@ -37,29 +37,29 @@ export const achievementsData = [
 ];
 
 export const projects = [
-  {
-    id: 1,
-    name: "Employee Management System",
-    description: [
-      "• Track and manage employee records, roles, and attendance efficiently.",
-      "• Includes intuitive dashboards and powerful search/filter tools.",
-      "• Automated HR workflows streamline daily operations.",
-      "• Prioritizes data security and reliable performance for organizations.",
-    ].join('\n'),
-    href: "https://i-phone-kunj-s-projects.vercel.app/",
-    image: "/assets/projects/Employee Management System.png",
-    bgImage: "/assets/backgrounds/blanket.jpg",
-    frameworks: [
-      { id: 1, name: "React.js" },
-      // { id: 1, name: "React.js" },
-      // { id: 1, name: "React.js" },
-      { id: 2, name: "Tailwind CSS" },
+  // {
+  //   id: 1,
+  //   name: "Employee Management System",
+  //   description: [
+  //     "• Track and manage employee records, roles, and attendance efficiently.",
+  //     "• Includes intuitive dashboards and powerful search/filter tools.",
+  //     "• Automated HR workflows streamline daily operations.",
+  //     "• Prioritizes data security and reliable performance for organizations.",
+  //   ].join('\n'),
+  //   href: "https://i-phone-kunj-s-projects.vercel.app/",
+  //   image: "/assets/projects/Employee Management System.png",
+  //   bgImage: "/assets/backgrounds/blanket.jpg",
+  //   frameworks: [
+  //     { id: 1, name: "React.js" },
+  //     // { id: 1, name: "React.js" },
+  //     // { id: 1, name: "React.js" },
+  //     { id: 2, name: "Tailwind CSS" },
       
-    ],
-  },
+  //   ],
+  // },
   {
-  id: 2,
-  name: "3D IPhone Website",
+  id: 1,
+  name: "Apple 3D",
   description: [
     "• Developed a responsive 3D IPhone website with interactive animations and immersive user experience.",
     "• Enabled dynamic user customization of IPhone's color and size using Three.js and React Three Fiber.",
@@ -74,11 +74,11 @@ export const projects = [
     { id: 1, name: "React.js" },
     { id: 2, name: "Three.js" },
     // { id: 3, name: "GSAP" },
-    { id: 4, name: "Tailwind CSS" }
+    { id: 3, name: "Tailwind CSS" }
   ]
 },
   {
-    id: 3,
+    id: 2,
     name: "Converso-AI Chatbot",
     description: [
       "• Interactive chatbot that understands and responds to natural language.",
@@ -97,7 +97,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     name: "Quiz Trivia",
     description: [
       "• Themed trivia game comparing MARVEL and DC universes.",
@@ -116,7 +116,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     name: "Tic Tac Toe Game",
     description: [
       "• Classic Tic Tac Toe game with a clean, responsive design.",
@@ -134,7 +134,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: "Rock Paper Scissors Game",
     description: [
       "• Fast-paced classic game with smooth animations.",
@@ -152,7 +152,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     name: "Amazon Clone",
     description: [
       "• Amazon homepage clone built with HTML and CSS.",
