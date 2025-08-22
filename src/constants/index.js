@@ -73,7 +73,7 @@ export const projects = [
   frameworks: [
     { id: 1, name: "React.js" },
     { id: 2, name: "Three.js" },
-    { id: 3, name: "GSAP" },
+    // { id: 3, name: "GSAP" },
     { id: 4, name: "Tailwind CSS" }
   ]
 },
