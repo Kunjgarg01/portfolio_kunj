@@ -178,12 +178,12 @@ const Contact = () => {
         </div>
       </div>
       {/* Marquee with minimal height */}
-      <div>
+      {/* <div>
         <Marquee
           items={items}
           className="text-black bg-transparent h-[27px] min-h-[27px] flex items-center"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
